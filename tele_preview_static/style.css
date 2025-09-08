@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "SF Pro", "Inter", -apple-system, sans-serif;
+  background: radial-gradient(circle at 80% 20%, #effff0 0%, #d8f5a1 40%, #7fd57f 100%);
+  position: relative;
+}
+
+.twallpaper .tgme_background_wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  display: block;
+}
+
+.twallpaper .tgme_background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.twallpaper .tgme_background_pattern {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: overlay;
+  opacity: 0.3;
+  background: url('wallpaper.svg') center repeat;
+  background-size: 420px auto;
+}
+
+.telegram-header {
+  height: 70px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.telegram-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c2c2c;
+}
+
+.download-btn {
+  background: rgba(0, 152, 229, 0.9);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 10px rgba(0, 152, 229, 0.2);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0 24px;
+  height: 34px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.download-btn:hover {
+  background: rgba(0, 152, 229, 1);
+  box-shadow: 0 4px 15px rgba(0, 152, 229, 0.3);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px);
+  padding: 0px 20px;
+}
+
+.telegram-preview {
+  width: 380px;
+  height: 580px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.telegram-preview:hover {
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.avatar {
+  width: 132px;
+  height: 132px;
+  border: 2px solid rgba(230, 230, 230, 0.8);
+  border-radius: 50%;
+  margin: 0 auto 28px;
+  overflow: hidden;
+  background: rgba(245, 245, 245, 0.8);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #212121;
+  letter-spacing: 0.2px;
+  background: linear-gradient(135deg, #212121, #353535);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.username {
+  margin: 4px 0 20px;
+  color: #5c5c5c;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.description {
+  margin: 0 auto;
+  max-width: 300px;
+  color: #535353;
+  line-height: 24px;
+  font-size: 16px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin-top: 40px;
+}
+
+.start-btn {
+  width: 165px;
+  height: 48px;
+  background: #308ad9;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.start-btn:hover {
+  background: #2a7bc7;
+  box-shadow: none;
+}
+
+.web-btn {
+  width: 165px;
+  height: 48px;
+  background: transparent;
+  border: 2px solid #308ad9;
+  color: #308ad9;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.web-btn:hover {
+  background: #eaf4fd;
+  box-shadow: none;
+}
+
